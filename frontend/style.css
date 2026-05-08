@@ -1,0 +1,168 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#1e293b,#7c3aed);
+}
+
+.hero h1{
+    font-size:65px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* FEATURES */
+
+.features{
+    background:#111827;
+}
+
+.feature-card{
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    transition:0.4s;
+    height:100%;
+    backdrop-filter:blur(10px);
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.15);
+}
+
+/* LOGIN */
+
+.login-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#0f172a,#7c3aed);
+}
+
+.login-card{
+    width:400px;
+    background:rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0px 0px 20px rgba(0,0,0,0.4);
+}
+
+/* DASHBOARD */
+
+.dashboard-container{
+    display:flex;
+    min-height:100vh;
+    background:#0f172a;
+    color:white;
+}
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    padding:30px;
+}
+
+.logo{
+    margin-bottom:40px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar ul li{
+    padding:15px;
+    margin-bottom:15px;
+    background:rgba(255,255,255,0.08);
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover{
+    background:#7c3aed;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+.dashboard-card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    backdrop-filter:blur(10px);
+}
+
+.dashboard-card:hover{
+    transform:translateY(-10px);
+}
+
+.chart-card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+/* RESUME ANALYZER */
+
+.resume-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#0f172a,#7c3aed);
+}
+
+.resume-card{
+    width:700px;
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+#result{
+    margin-top:30px;
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+}
+
+/* BUTTONS */
+
+.btn{
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
