@@ -10,9 +10,13 @@
 
   <title>InterviewIQ AI</title>
 
+  <!-- Bootstrap -->
+
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet">
+
+  <!-- CSS -->
 
   <link rel="stylesheet" href="style.css">
 
@@ -24,239 +28,194 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
 
-  <a class="navbar-brand fw-bold"
-     href="index.html">
+  <div class="container-fluid">
 
-     InterviewIQ AI
+    <!-- LOGO -->
 
-  </a>
+    <a class="navbar-brand fw-bold"
+       href="index.html">
 
-  <div class="collapse navbar-collapse">
+       InterviewIQ AI
 
-    <ul class="navbar-nav ms-auto">
+    </a>
 
-      <li class="nav-item">
+    <!-- MOBILE BUTTON -->
 
-        <a class="nav-link active"
-           href="index.html">
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
 
-           Home
+      <span class="navbar-toggler-icon"></span>
 
-        </a>
+    </button>
 
-      </li>
+    <!-- NAVBAR CONTENT -->
 
-      <li class="nav-item">
+    <div class="collapse navbar-collapse"
+         id="navbarNav">
 
-        <a class="nav-link"
-           href="dashboard.html">
+      <ul class="navbar-nav ms-auto align-items-center">
 
-           Dashboard
+        <li class="nav-item">
 
-        </a>
+          <a class="nav-link active"
+             href="index.html">
 
-      </li>
+             Home
 
-      <li class="nav-item">
+          </a>
 
-        <a class="nav-link"
-           href="resume.html">
+        </li>
 
-           Resume Analyzer
+        <li class="nav-item">
 
-        </a>
+          <a class="nav-link"
+             href="dashboard.html">
 
-      </li>
+             Dashboard
 
-      <li class="nav-item">
+          </a>
 
-        <a class="nav-link"
-           href="technical.html">
+        </li>
 
-           Technical Prep
+        <li class="nav-item">
 
-        </a>
+          <a class="nav-link"
+             href="resume.html">
 
-      </li>
+             Resume Analyzer
 
-      <!-- USER PROFILE -->
+          </a>
 
-<li class="nav-item dropdown ms-3">
+        </li>
 
-  <a class="nav-link dropdown-toggle text-white d-flex align-items-center"
-     href="#"
-     role="button"
-     data-bs-toggle="dropdown">
+        <li class="nav-item">
 
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-      width="40"
-      height="40"
-      class="rounded-circle"
-    >
+          <a class="nav-link"
+             href="technical.html">
 
-  </a>
+             Technical Prep
 
-  <ul class="dropdown-menu dropdown-menu-end p-3">
+          </a>
 
-    <li class="mb-2">
+        </li>
 
-      <h6 class="mb-0 fw-bold" id="userName">
-        User
-      </h6>
+        <!-- LOGIN BUTTON -->
 
-      <small class="text-muted" id="userEmail">
-        user@gmail.com
-      </small>
+        <li class="nav-item ms-3"
+            id="loginNav">
 
-    </li>
+          <a class="btn btn-primary"
+             href="login.html">
 
-    <li>
-      <hr class="dropdown-divider">
-    </li>
+             Login
 
-    <li>
+          </a>
 
-      <a class="dropdown-item"
-         href="dashboard.html">
+        </li>
 
-         Dashboard
+        <!-- USER PROFILE -->
 
-      </a>
+        <li class="nav-item dropdown ms-3 d-none"
+            id="profileNav">
 
-    </li>
+          <a class="nav-link dropdown-toggle d-flex align-items-center"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown">
 
-    <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              width="42"
+              height="42"
+              class="rounded-circle border border-light"
+            >
 
-      <a class="dropdown-item"
-         href="resume.html">
+          </a>
 
-         Resume Analyzer
+          <!-- DROPDOWN -->
 
-      </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3">
 
-    </li>
+            <li class="mb-2">
 
-    <li>
+              <h6 class="fw-bold mb-0"
+                  id="userName">
 
-      <a class="dropdown-item"
-         href="technical.html">
+                  User
 
-         Technical Prep
+              </h6>
 
-      </a>
+              <small class="text-muted"
+                     id="userEmail">
 
-    </li>
+                     user@gmail.com
 
-    <li>
-      <hr class="dropdown-divider">
-    </li>
+              </small>
 
-    <li>
+            </li>
 
-      <a class="dropdown-item text-danger"
-         href="login.html">
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-         Logout
+            <li>
 
-      </a>
+              <a class="dropdown-item"
+                 href="dashboard.html">
 
-    </li>
+                 Dashboard
 
-  </ul>
+              </a>
 
-</li>
+            </li>
 
-          <!-- PROFILE IMAGE -->
+            <li>
 
-          <img
-            src="https://i.imgur.com/6VBx3io.png"
-            width="45"
-            height="45"
-            class="rounded-circle me-3 border border-light"
-          >
+              <a class="dropdown-item"
+                 href="resume.html">
 
-          <!-- USER DETAILS -->
+                 Resume Analyzer
 
-          <div class="text-start">
+              </a>
 
-            <div
-              class="fw-bold"
-              id="userName">
+            </li>
 
-              User
+            <li>
 
-            </div>
+              <a class="dropdown-item"
+                 href="technical.html">
 
-            <small
-              class="text-light"
-              id="userEmail">
+                 Technical Prep
 
-              user@gmail.com
+              </a>
 
-            </small>
+            </li>
 
-          </div>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-        </a>
+            <li>
 
-        <!-- DROPDOWN -->
+              <a class="dropdown-item text-danger"
+                 href="login.html"
+                 onclick="logoutUser()">
 
-        <ul class="dropdown-menu dropdown-menu-end">
+                 Logout
 
-          <li>
+              </a>
 
-            <a class="dropdown-item"
-               href="dashboard.html">
+            </li>
 
-               Dashboard
+          </ul>
 
-            </a>
+        </li>
 
-          </li>
+      </ul>
 
-          <li>
-
-            <a class="dropdown-item"
-               href="resume.html">
-
-               Resume Analyzer
-
-            </a>
-
-          </li>
-
-          <li>
-
-            <a class="dropdown-item"
-               href="technical.html">
-
-               Technical Prep
-
-            </a>
-
-          </li>
-
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-
-          <li>
-
-            <a class="dropdown-item text-danger"
-               href="login.html">
-
-               Logout
-
-            </a>
-
-          </li>
-
-        </ul>
-
-      </li>
-
-    </ul>
+    </div>
 
   </div>
 
@@ -264,9 +223,9 @@
 
 <!-- HERO SECTION -->
 
-<section class="hero">
+<section class="hero py-5">
 
-  <div class="container text-center">
+  <div class="container text-center text-light">
 
     <h1 class="display-2 fw-bold">
 
@@ -276,27 +235,27 @@
 
     <p class="lead mt-4">
 
-      Practice HR, Technical, and Coding Interviews with
-      intelligent AI-powered feedback, resume analysis,
-      and real interview simulations.
+      Practice HR, Technical, and Coding Interviews
+      with intelligent AI-powered feedback,
+      resume analysis, and real interview simulations.
 
     </p>
 
     <div class="mt-5">
 
       <a
-      href="dashboard.html"
-      class="btn btn-primary btn-lg px-5 me-3">
+        href="dashboard.html"
+        class="btn btn-primary btn-lg px-5 me-3">
 
-      Start Mock Interview
+        Start Mock Interview
 
       </a>
 
       <a
-      href="resume.html"
-      class="btn btn-outline-light btn-lg px-5">
+        href="resume.html"
+        class="btn btn-outline-light btn-lg px-5">
 
-      Upload Resume
+        Upload Resume
 
       </a>
 
@@ -312,13 +271,15 @@
 
   <div class="container">
 
-    <h2 class="text-center mb-5">
+    <h2 class="text-center text-light mb-5">
 
       Powerful AI Features
 
     </h2>
 
     <div class="row g-4">
+
+      <!-- FEATURE 1 -->
 
       <div class="col-md-4">
 
@@ -328,13 +289,16 @@
 
           <p>
             Upload your resume and get ATS scores,
-            keyword optimization tips, formatting feedback,
+            keyword optimization tips,
+            formatting feedback,
             and improvement suggestions instantly.
           </p>
 
         </div>
 
       </div>
+
+      <!-- FEATURE 2 -->
 
       <div class="col-md-4">
 
@@ -344,12 +308,16 @@
 
           <p>
             Practice HR interview questions with
-            AI-generated responses and confidence analysis.
+            AI-generated responses,
+            communication analysis,
+            and confidence improvement.
           </p>
 
         </div>
 
       </div>
+
+      <!-- FEATURE 3 -->
 
       <div class="col-md-4">
 
@@ -358,12 +326,65 @@
           <h3>Technical Preparation</h3>
 
           <p>
-            Prepare for Java, Python, SQL,
-            Web Development, Aptitude,
-            and Coding interviews.
+            Prepare for Java,
+            Python,
+            SQL,
+            Web Development,
+            Aptitude,
+            and Coding interviews in one platform.
           </p>
 
         </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="py-5 bg-dark text-light">
+
+  <div class="container text-center">
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+        <h1 class="fw-bold">
+          10K+
+        </h1>
+
+        <p>
+          Interview Questions
+        </p>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h1 class="fw-bold">
+          5K+
+        </h1>
+
+        <p>
+          Students Practicing
+        </p>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h1 class="fw-bold">
+          95%
+        </h1>
+
+        <p>
+          Placement Success Rate
+        </p>
 
       </div>
 
@@ -377,14 +398,25 @@
 
 <footer class="bg-black text-center text-light py-5">
 
-  <h3 class="fw-bold">InterviewIQ AI</h3>
+  <h3 class="fw-bold">
+    InterviewIQ AI
+  </h3>
 
   <p class="mt-3">
     Smart AI-Powered Interview Preparation Platform
   </p>
 
-  <p class="text-secondary">
-    © 2026 InterviewIQ AI. All Rights Reserved.
+  <p>
+    Practice smarter.
+    Build confidence.
+    Get hired.
+  </p>
+
+  <hr class="bg-light w-50 mx-auto">
+
+  <p class="text-secondary mt-3">
+    © 2026 InterviewIQ AI.
+    All Rights Reserved.
   </p>
 
 </footer>
@@ -393,18 +425,31 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- DYNAMIC USER DETAILS -->
+<!-- LOGIN SYSTEM -->
 
 <script>
 
 const username = localStorage.getItem("username");
+
 const userEmail = localStorage.getItem("userEmail");
 
 if(username && userEmail){
 
+    document.getElementById("loginNav").classList.add("d-none");
+
+    document.getElementById("profileNav").classList.remove("d-none");
+
     document.getElementById("userName").innerText = username;
 
     document.getElementById("userEmail").innerText = userEmail;
+
+}
+
+function logoutUser(){
+
+    localStorage.removeItem("username");
+
+    localStorage.removeItem("userEmail");
 
 }
 
